@@ -1,0 +1,49 @@
+section{
+ font-family: 'Cormorant', serif;
+}
+
+.layer{
+
+  position: absolute;
+  top: 95%;
+  left: 95%;
+width: 100%;
+  height: 100%;
+  background-color:  rgba(0, 0, 0, 0.2);
+  transition: all 1s;
+  
+}
+.parent{
+  overflow: hidden;
+
+}
+.parent:hover .layer{
+  top: 0%;
+  left: 0%;
+ 
+
+}
+
+.parent img{
+  transition: all 1s;
+}
+.parent:hover img{
+  transform: scale(1.2)
+}
+
+/* ---------media---- */
+@media all and  (max-width:575px) {
+  .parent{
+    margin: auto;
+   width: 250px!important;
+  
+  }
+
+}
+@media all and  (min-width:576px) and (max-width:768px) { 
+  .parent{
+    margin: auto;
+    width: 300px!important;
+  
+  }
+}
